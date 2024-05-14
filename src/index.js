@@ -13,6 +13,8 @@ export class Paytring extends Api{
         create: order(this).create,
         
         fetch: order(this).fetch,
+
+        fetchAdvance: order(this).fetchAdvance,
     }
 
     upi = {

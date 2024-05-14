@@ -18,6 +18,15 @@ export default (api) => {
             id: orderId
          }
          return await post(endpoint, reqBody);
-      }
+      },
+      fetchAdvance: async(orderId) => {
+        const endpoint = '/order/fetch';
+        const reqBody = {
+           key,
+           id: orderId,
+           fetch_type : "advance"
+        }
+        return await post(endpoint, reqBody);
+     }
    }
 }
