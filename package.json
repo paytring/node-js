@@ -1,7 +1,7 @@
 {
-  "name": "paytring-nodejs",
+  "name": "paytring",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.3.9",
   "description": "paytring node js sdk",
   "main": "index.js",
   "scripts": {
