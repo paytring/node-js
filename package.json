@@ -1,19 +1,64 @@
 {
-  "name": "paytring",
+  "name": "@paytring/nodejs-sdk",
   "type": "module",
   "version": "1.4.0",
-  "description": "paytring node js sdk",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Official Node.js SDK for Paytring Payment Gateway - Accept payments, validate UPI addresses, and manage orders with ES modules support",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./index.d.ts"
+    }
   },
-  "author": "paytring",
+  "scripts": {
+    "test": "node test/runner.js",
+    "prepublishOnly": "npm run test",
+    "lint": "echo \"Add linting here\"",
+    "build": "echo \"No build step required for ES modules\""
+  },
+  "keywords": [
+    "paytring",
+    "payment",
+    "gateway",
+    "upi",
+    "nodejs",
+    "sdk",
+    "payments",
+    "india",
+    "fintech",
+    "transaction",
+    "esm",
+    "es-modules",
+    "import"
+  ],
+  "author": "Paytring",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paytring/nodejs-sdk"
+  },
+  "homepage": "https://paytring.com",
+  "bugs": {
+    "url": "https://github.com/paytring/nodejs-sdk/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "src/",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
-    "axios": "^1.1.3"
+    "axios": "^1.7.2"
   },
   "devDependencies": {
-    "@types/node": "^18.11.2",
-    "typescript": "^4.8.4"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
